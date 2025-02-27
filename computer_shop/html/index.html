@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHub - Modern Computing Solutions</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>TechHub</h1>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#deals">Deals</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#search"><i class="fas fa-search"></i></a>
+                <a href="#cart"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+                <a href="#account"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active">
+                <img src="../img/categories/products/modern-computer-store.jpg" alt="Modern Computer Store">
+                <div class="hero-text">
+                    <h1>Next Generation Computing</h1>
+                    <p>Discover powerful devices designed for today's digital world</p>
+                    <button class="cta-button">Shop Now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="../img/categories/products/gaming-setup.jpg" alt="Gaming PC Setup">
+                <div class="hero-text">
+                    <h1>Ultimate Gaming Experience</h1>
+                    <p>Level up your game with our premium gaming setups</p>
+                    <button class="cta-button">Explore Gaming</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="../img/categories/products/workstation.jpg" alt="Professional Workstation">
+                <div class="hero-text">
+                    <h1>Professional Solutions</h1>
+                    <p>Empower your workflow with our professional grade equipment</p>
+                    <button class="cta-button">View Products</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="../img/categories/products/premium-laptops.jpg" alt="Premium Laptops">
+                <div class="hero-text">
+                    <h1>Latest Technology</h1>
+                    <p>Stay ahead with cutting-edge computing solutions</p>
+                    <button class="cta-button">Discover More</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="../img/categories/products/computer-components.jp.jpg" alt="Computer Components">
+                <div class="hero-text">
+                    <h1>Custom Build Service</h1>
+                    <p>Create your perfect PC with our expert builders</p>
+                    <button class="cta-button">Start Building</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="../img/categories/products/rgb-setup.jpg" alt="RGB Gaming Setup">
+                <div class="hero-text">
+                    <h1>Gaming Battlestations</h1>
+                    <p>Complete setups for the ultimate gaming experience</p>
+                    <button class="cta-button">Shop Setups</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="featured-categories">
+        <div class="container">
+            <h2>Browse By Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="../img/hero/laptops.jpg" 
+                         loading="lazy" 
+                         alt="Laptops">
+                    <h3>Laptops</h3>
+                </div>
+                <div class="category-card">
+                    <img src="../img/hero/desktop-pcs.jpg" 
+                         loading="lazy" 
+                         alt="Desktop PCs">
+                    <h3>Desktop PCs</h3>
+                </div>
+                <div class="category-card">
+                    <img src="../img/hero/gaming-pcs.jpg" 
+                         loading="lazy" 
+                         alt="Gaming PCs">
+                    <h3>Gaming PCs</h3>
+                </div>
+                <div class="category-card">
+                    <img src="../img/hero/accessories.jpg" 
+                         loading="lazy" 
+                         alt="Accessories">
+                    <h3>Accessories</h3>
+                </div>
+                <div class="category-card">
+                    <img src="../img/hero/monitors.jpg" 
+                         loading="lazy" 
+                         alt="Monitors">
+                    <h3>Monitors</h3>
+                </div>
+                <div class="category-card">
+                    <img src="../img/hero/computer-parts.jpg" 
+                         loading="lazy" 
+                         alt="Computer Parts">
+                    <h3>Computer Parts</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="laptop">Laptops</button>
+                <button class="filter-btn" data-filter="desktop">Desktops</button>
+                <button class="filter-btn" data-filter="gaming">Gaming</button>
+            </div>
+            <div class="products-grid" id="products-container">
+                <!-- Products will be loaded dynamically here -->
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h2>Limited Time Offer</h2>
+            <p>Get up to 30% off on select premium laptops</p>
+            <button class="cta-button">View Deals</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <i class="fas fa-truck"></i>
+                <h3>Free Shipping</h3>
+                <p>On orders over $999</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <h3>2-Year Warranty</h3>
+                <p>On all our products</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Expert assistance</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-undo"></i>
+                <h3>30-Day Returns</h3>
+                <p>Hassle-free returns</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest updates, deals and tech news</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechHub</h3>
+                    <p>Your destination for premium computing solutions and expert tech advice.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#deals">Deals</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Digital City</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@techhub.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Payment Methods</h3>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechHub. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Quick View Modal -->
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Modal content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="../javascript/script.js"></script>
+</body>
+</html>
